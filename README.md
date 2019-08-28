@@ -1,5 +1,5 @@
 # Itunu
-My cv in plain html
+My cv 
 
 
 ## Twitter post
