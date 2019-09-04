@@ -10,16 +10,23 @@ function sendMessage(e) {
   const email = document.getElementById('email').value.trim();
   let error = false;
   if (!name) {
-    document.querySelector('.name-error').innerText = 'Please input name';
+    document.querySelector('.name-error').innerText =
+      'Please enter a name 4 or more characters long';
+    error = true;
+  }
+
+  if (name && name.length < 4) {
+    document.querySelector('.name-error').innerText = 'Please enter a name';
     error = true;
   }
 
   if (!title) {
-    document.querySelector('.title-error').innerText = 'Please input title';
+    document.querySelector('.title-error').innerText = 'Please enter a title';
     error = true;
   }
   if (!message) {
-    document.querySelector('.message-error').innerText = 'Please input message';
+    document.querySelector('.message-error').innerText =
+      'Please enter a message';
     error = true;
   }
 
