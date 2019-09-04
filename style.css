@@ -35,7 +35,12 @@ p {
 .flex {
   display: flex;
 }
-
+.flex-v-center {
+  align-items: center;
+}
+.flex-h-bet {
+  justify-content: space-between;
+}
 .flex-end {
   justify-content: flex-end;
 }
