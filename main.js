@@ -10,13 +10,13 @@ function sendMessage(e) {
   const email = document.getElementById('email').value.trim();
   let error = false;
   if (!name) {
-    document.querySelector('.name-error').innerText =
-      'Please enter a name 4 or more characters long';
+    document.querySelector('.name-error').innerText = 'Please enter a name';
     error = true;
   }
 
   if (name && name.length < 4) {
-    document.querySelector('.name-error').innerText = 'Please enter a name';
+    document.querySelector('.name-error').innerText =
+      'Please enter a name 4 or more characters long';
     error = true;
   }
 
