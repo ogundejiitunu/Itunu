@@ -66,6 +66,11 @@ p {
   align-items: flex-start;
   /* justify-content: center; */
 }
+@media (max-width: 600px) {
+  .header-container {
+    display: block;
+  }
+}
 .header-container a {
   color: black;
 }
